@@ -1,0 +1,189 @@
+---
+engine: julia
+title: A Digital Complutensian Polyglot Bible
+author: 
+    - name: Neel Smith
+      affiliation:
+        - name: Dept. of Classics, College of the Holy Cross
+    - name: Ashley Terjanian
+      affiliation:
+        - name: College of the Holy Cross '26    
+format: 
+    revealjs:
+        theme: [default]
+        navigation-mode: vertical
+        footer: "SBL: San Diego, November 25, 2024"
+
+---
+
+
+
+# Context and questions
+
+
+- new major at Holy Cross: any two ancient Mediterranean languages
+- community with different background and skills
+
+
+## Questions
+
+- welcoming to new comers and advanced scholars
+- multilingual reading?
+
+# Outline
+
+1. Reading the Complutensian Bible
+2. Exploring a digital polygot Bible
+
+# (1) Reading the Complutensian Bible
+
+Editors' goals:
+
+- accessible
+- useful for innovative research
+
+
+## Tour of a page: four texts
+
+
+
+
+![4 texts](./imgs/four-texts.png)
+
+## Tour: more
+
+- 2 glosses (interlinear on Greek, parallel on Aramaic)
+
+![Adjacent glosses](./imgs/adjacent-targum.png)
+
+## Glossing via indexing
+
+
+![Linking Vulgate to Hebrew text](./imgs/index-latin-hebrew.png)
+
+
+## Lexicon
+
+![Lexicon](./imgs/caput1.jpg)
+
+![Subsenses and passages](./imgs/initium.jpg)
+
+## Keeping text aligned
+
+![](./imgs/Hebrew-whitespace.png)
+
+- indexing for virtual third gloss on Hebrew
+- lemmatization
+
+
+## Two way balancing
+
+![](./imgs/Latin-whitespace.png)
+
+
+## Volume 5
+
+
+- New Testament
+- Greek grammar
+- Greek vocabulary
+- proper names
+- journeys of Paul
+
+## Volume 6: contents
+
+- Hebrew lexicon
+- Hebrew grammar
+- Latin-Hebrew indexing
+- proper nouns
+- etymologies of names
+
+
+##
+
+
+
+![Volume 6: quire analysis](./imgs/quire-analysis.png)
+
+
+## Respect for Greek and Hebrew texts
+
+![](./imgs/maccabees3.jpg)
+
+## Goals
+
+A library insisting on necessity of multilingual reading
+
+:::{.callout-note title="TBA"}
+ADD table with comparison of quire sequences of volume 6
+:::
+
+
+
+# (2) Exploring a digital polygot Bible
+
+
+
+## Browsing images
+
+
+![](./imgs/nb-image-browser.png)
+
+
+## Reading aligned texts
+
+
+![](./imgs/nb-aligned-passages.png)
+
+
+## Validating editing
+
+![](./imgs/nb-validate-targum.png)
+
+
+## Morphological analysis
+
+
+![](./imgs/nb-greek-morphology.png)
+
+
+
+
+
+## A digital polyglot: source texts
+
+- use existing editions of Masoretic text, Vulgate, Septuagint, Targum Onkelos
+- first digital editions of Latin glosses on Septuagint, Targum
+
+## Morphological analysis
+
+- morphology tailored to corpus
+- identifiers for lexemes
+- object model of morphological forms
+
+##  Morphological resources
+
+- Hebrew: use existing resources of OSHB project
+- Latin, Greek: develop corpus with *Tabulae* system and *Kanones* system
+
+## Note on resources
+
+- Project site: [https://neelsmith.quarto.pub/digitalcomplutensian/](https://neelsmith.quarto.pub/digitalcomplutensian/)
+
+
+# Thank you!
+
+
+
+
+*More info*: 
+
+
+
+![https://neelsmith.quarto.pub/digitalcomplutensian](./imgs/digcomp-qr.png)
+
+*Contact*:
+
+`nsmith@holycross.edu`
+
+`anterj26@g.holycross.edu`
