@@ -13,9 +13,10 @@ format:
         theme: [default]
         navigation-mode: vertical
         footer: "SBL: San Diego, November 25, 2024"
+        css: custom.css
+  
 
 ---
-
 
 
 # Context and questions
@@ -34,6 +35,7 @@ format:
 
 1. Reading the Complutensian Bible
 2. Exploring a digital polygot Bible
+3. Next steps
 
 # (1) Reading the Complutensian Bible
 
@@ -48,56 +50,85 @@ Editors' goals:
 
 
 
-![4 texts](./imgs/four-texts.png)
+![Texts in four languages](./imgs/four-texts.png)
 
-## Tour: more
+## Glossing commentary
 
-- 2 glosses (interlinear on Greek, parallel on Aramaic)
+![Interlinear glosses (Septuagint)](./imgs/interlinear-sept-hilited.jpeg)
 
-![Adjacent glosses](./imgs/adjacent-targum.png)
-
-## Glossing via indexing
+![Adjacent glosses (Targum Onkelos)](./imgs/adjacent-targum-hilited.jpeg)
 
 
-![Linking Vulgate to Hebrew text](./imgs/index-latin-hebrew.png)
+## Indexing and lemmatization
+
+
+![Glossing by indexing Vulgate to Hebrew, plus link to lemma](./imgs/index-latin-hebrew.png)
 
 
 ## Lexicon
 
-![Lexicon](./imgs/caput1.jpg)
+![Article keyed by lemma](./imgs/caput1-hilited.jpeg)
 
-![Subsenses and passages](./imgs/initium.jpg)
+![Concordance by senses](./imgs/initium.jpg)
 
 ## Keeping text aligned
 
-![](./imgs/Hebrew-whitespace.png)
-
-- indexing for virtual third gloss on Hebrew
-- lemmatization
+![Spacing markers in Hebrew text](./imgs/Hebrew-whitespace.png)
 
 
-## Two way balancing
-
-![](./imgs/Latin-whitespace.png)
 
 
-## Volume 5
+
+## 
+![Spacing markers in Latin text](./imgs/Latin-whitespace.png)
+
+## Volumes 1-4
 
 
-- New Testament
+- Volume 1: Torah (including Targum Onkelos)
+- Volumes 2-4: remainder of Hebrew Bible (following order of books in Vulgate)
+
+
+## Volume 5: contents
+
+
+- Text of New Testament (with Pauline prefaces)
 - Greek grammar
 - Greek vocabulary
-- proper names
+- etymologies of proper names
 - journeys of Paul
 
 ## Volume 6: contents
 
 - Hebrew lexicon
 - Hebrew grammar
-- Latin-Hebrew indexing
-- proper nouns
-- etymologies of names
+- Reverse index of Latin words to the Hebrew lexicon
+- Alternate forms of names
+- Etymologies of names
 
+## Etymology of names
+
+![Alphabetized by Latin form](./imgs/name-index.png)
+
+
+## Lexicon
+
+
+![Beginning of entry](./imgs/lexicon-entry.png)
+
+![Folios identified by number](./imgs/lexicon-folio-num.png)
+
+
+
+
+## Latin index to lexicon
+
+![Latin words indexed to folio reference in lexicon](./imgs/latin-index-hilited.jpeg)
+
+## 
+
+
+![**Bellum** on folio 83](./imgs/find-bellum-on-f83.jpeg)
 
 ##
 
@@ -108,15 +139,14 @@ Editors' goals:
 
 ## Respect for Greek and Hebrew texts
 
-![](./imgs/maccabees3.jpg)
+![Note that **Third Maccabees** is not in the Vulgate](./imgs/maccabees3.jpg)
 
 ## Goals
 
-A library insisting on necessity of multilingual reading
 
-:::{.callout-note title="TBA"}
-ADD table with comparison of quire sequences of volume 6
-:::
+1. A library insisting on necessity of multilingual reading
+2. numerous aids for beginners
+3. sophisticated indexing for scholars
 
 
 
@@ -124,24 +154,79 @@ ADD table with comparison of quire sequences of volume 6
 
 
 
-## Browsing images
+## A "small-digital" approach
+
+- exploratory
+- minimal technical prerequisites
+- can be developed by a small team or individual
+- easily shared and replicated:
+    - licensing
+    - documentation
+
+
+
+## Platforms for sharing
+
+- reactive Pluto notebooks
+- multi-format documents in Quarto
+
+
+## Reusing existing resources
+
+- images (National Library of Spain)
+- texts of Hebrew Bible, Septuagint, Vulgate, Targum Onkelos (ebible.org, www.sefaria.org)
+- morphological annotations (Open Scriptures Hebrew Bible, Sefaria)
+
+
+## Pluto: browsing images
 
 
 ![](./imgs/nb-image-browser.png)
 
-
-## Reading aligned texts
+## Pluto: reading aligned texts
 
 
 ![](./imgs/nb-aligned-passages.png)
 
+## New data sets we're creating
 
-## Validating editing
+- (**A**) editions of Latin glosses
+- (**B**) morphology for Greek, Latin texts
+- (**C**) alignments verb functions in Hebrew, Greek, Latin    
+
+
+
+
+
+## (**A**) New editions
+
+- TEI XML
+- cannically citable by URN
+- indexed to source images
+
+
+
+## Pluto: validating editing
 
 ![](./imgs/nb-validate-targum.png)
 
 
-## Morphological analysis
+## Pluto: comparing vocabulary
+
+![Comparison of string tokens in Latin documents for *Genesis* 30.6](./imgs/glossing-vocab.png)
+
+
+##  **(B)** Morphological analysis
+
+*Hebrew*: use existing resources from OSHB, Sefaria
+
+*Latin, Greek*: develop corpus with *Tabulae* system and *Kanones* system:
+
+- morphology tailored to corpus
+- identifiers for lexemes
+- object model of morphological forms
+
+## Pluto: morphological analysis
 
 
 ![](./imgs/nb-greek-morphology.png)
@@ -149,27 +234,56 @@ ADD table with comparison of quire sequences of volume 6
 
 
 
+## Pluto: morphological search
 
-## A digital polyglot: source texts
+![](./imgs/hebrew-verbs.png)
 
-- use existing editions of Masoretic text, Vulgate, Septuagint, Targum Onkelos
-- first digital editions of Latin glosses on Septuagint, Targum
 
-## Morphological analysis
+## **(C)** Cross-lingual alignments
 
-- morphology tailored to corpus
-- identifiers for lexemes
-- object model of morphological forms
+- delimited text tables
+- canonically identified passages
+- canonically identified lexemes
 
-##  Morphological resources
 
-- Hebrew: use existing resources of OSHB project
-- Latin, Greek: develop corpus with *Tabulae* system and *Kanones* system
+## Pluto: aligning Latin verbs
 
-## Note on resources
+![Aligning Latin *creo*](./imgs/nb-align-verbs.png)
 
-- Project site: [https://neelsmith.quarto.pub/digitalcomplutensian/](https://neelsmith.quarto.pub/digitalcomplutensian/)
 
+
+# (3) Next steps
+
+## Augmenting small digital with AI
+
+- morphological parsing and alignment
+- editing?
+
+## Current AIs (Nov. 2024)
+
+*Can*
+
+- accurately automate cross-lingual alignment
+
+but *cannot*
+
+- associate lexemes with abstract identifiers like URNs
+
+
+and *do*
+
+- hallucinate morphologically based searching
+
+## (See transcripts of conversations)
+
+
+
+
+## Hybrid strategy
+
+- collect alignments from AI
+- manage associations of headwords with identifiers
+- continue to manage indexing of morphological analyses to tokens
 
 # Thank you!
 
@@ -187,3 +301,22 @@ ADD table with comparison of quire sequences of volume 6
 `nsmith@holycross.edu`
 
 `anterj26@g.holycross.edu`
+
+
+
+
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js""></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('body').prepend('<div class=\"zoomDiv\"><img src=\"\" class=\"zoomImg\"></div>');
+    // onClick function for all plots (img's)
+    $('img:not(.zoomImg)').click(function() {
+      $('.zoomImg').attr('src', $(this).attr('src')).css({width: '100%'});
+      $('.zoomDiv').css({opacity: '1', width: 'auto', border: '1px solid white', borderRadius: '5px', position: 'fixed', top: '50%', left: '50%', marginRight: '-50%', transform: 'translate(-50%, -50%)', boxShadow: '0px 0px 50px #888888', zIndex: '50', overflow: 'auto', maxHeight: '100%'});
+    });
+    // onClick function for zoomImg
+    $('img.zoomImg').click(function() {
+      $('.zoomDiv').css({opacity: '0', width: '0%'}); 
+    });
+  });
+</script>
